@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color .5s;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --first-color: rgb(168, 218, 220);
+  --second-color: rgb(29, 93, 133);
+  --third-color: rgb(235, 250, 250);
+  --fourth-color: rgb(194, 3, 3);
+  --fifth-color: rgb(29, 53, 87);
+  --shadow-color: rgba(47, 47, 47, 0.25);
+
+  --first-color: rgb(0, 35, 55);
+  --second-color: rgb(0, 153, 195);
+  --third-color: rgb(121, 172, 204);
+  --fourth-color: rgb(240, 149, 96);
+  --fifth-color: rgb(202, 240, 248);
+  --shadow-color: rgba(255, 255, 255, .25)
+}
+
+html {
+  /* background-image: url(/src/Assets/background-pattern.png); */
+  /* background-image: url(/src/Assets/background-pattern-dark.png); */
+  background: fixed;
+  color: var(--fifth-color);
+  width: 100vw;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+main {
+  margin: auto;
+  margin-top: 8rem;
+}
+
+.container {
+  width: 80vw;
+  height: 75vh;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: var(--first-color);
+  box-shadow: 0 0 2rem .5rem var(--shadow-color);
+}
+
+h1, h2 { color: var(--second-color); }
+
+button {
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+}
+
+img { display: block;}
+
+main {
+  display: flex;
+  width: 300vw;
+}
+
+.page__navButtons img{
+  position: fixed;
+  top: 53vh;
+  right: 3vw;
+  scale: 2;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.page__navButtons .left {
+  rotate: 180deg;
+  left: 3vw;
+}
+
+.page__navButtons img:hover {
+  scale: 2.5
+}

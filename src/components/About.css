@@ -1,0 +1,30 @@
+.about {
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  gap: 2rem;
+}
+
+.about__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about h1 {
+  margin-bottom: -.5rem;
+}
+
+.about p {
+  margin-top: .5rem;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+
+.about__img {
+  background-image: url(../Assets/programando.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+}

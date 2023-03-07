@@ -1,0 +1,22 @@
+.dark-mode img{
+  height: 2rem;
+  width: 2rem;
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  transition: all.3s;
+  animation: rotation infinite 6s linear;
+}
+
+.dark-mode img:hover {
+  scale: 1.2;
+}
+
+@keyframes rotation {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
