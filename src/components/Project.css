@@ -3,10 +3,9 @@
   grid-template-rows: min-content min-content 1fr;
 }
 
-.project h1 { text-align: center; }
-
 .project-navbar{
-  margin: 1rem 0 -.5rem;
+  /* margin: 1rem 0 -.5rem; */
+  margin-bottom: 1rem;
   width: 100%;
   display: flex;
   gap: 1rem;
@@ -17,15 +16,13 @@
 
 .project-navbar button {
   color: var(--second-color);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
   transition: .3s;
 }
 
 .project-navbar button:first-child { transform-origin: 0; }
-
 .project-navbar button:last-child { transform-origin: 100%; }
-
 .project-navbar button:hover { color: var(--fifth-color); }
 
 .project-navbar button.active {
@@ -43,7 +40,7 @@
 .project__text { margin:  auto; }
   
 .project__text p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -55,6 +52,7 @@
   justify-content: center;
 }
 
+/* .project__buttons a, .project__preview button{ */
 .project__buttons a{
   padding: .5rem 1rem;
   color: var(--third-color);
@@ -64,6 +62,8 @@
   transition: .3s;
 }
 
+/* .project__buttons a:hover, */
+/* .project__preview button:hover { background-color: var(--fifth-color); } */
 .project__buttons a:hover { background-color: var(--fifth-color); }
 
 .project__navButtons {
@@ -81,21 +81,51 @@
 }
 
 .project__navButtons img:first-child { rotate: 180deg; }
-
 .project__navButtons img:hover { scale: 1.5;}
 
 .project__preview {
   width: 100%;
-  margin: auto;
-  position: relative;
+  /* margin: auto; */
+  /* position: relative; */
+  overflow: hidden;
+}
+
+.preview__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: .5rem;
+}
+
+.preview__buttons button {
+  color: var(--second-color);
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: .3s;
+}
+
+.preview__buttons button.active { color: var(--fourth-color); }
+
+.project__slider {
+  display: flex;
+  transform: translateX(-100%);
+  transition: .3s;
 }
 
 .project__img {
   width: 95%;
-  margin: auto;
+  margin: auto 2.5%;
   border-radius: .5rem;
-  box-shadow: 0 0 3rem -1rem var(--shadow-color);
+  /* box-shadow: 0 0 3rem -1rem var(--shadow-color); */
   transition: .3s;
 }
+.project__img--desktop {
+  /* transform: translateX(-100%); */
+}
 
-.project__img:hover { scale: 1.05; }
+.project__img--mobile {
+  width: auto;
+  margin-left: 39%;
+}
+
+/* .project__img:hover { scale: 1.05; } */

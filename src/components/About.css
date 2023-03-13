@@ -1,7 +1,9 @@
 .about {
+  height: 100%;
   display: grid;
   grid-template-columns: 60% 1fr;
   gap: 2rem;
+  margin-top: 1rem;
 }
 
 .about__text {
@@ -11,14 +13,12 @@
   justify-content: space-between;
 }
 
-.about h1 {
-  margin-bottom: -.5rem;
-}
+.about h2 { margin: 1rem 0 0; }
 
 .about p {
-  margin-top: .5rem;
+  margin-bottom: .5rem;
   text-align: justify;
-  font-size: 1.1rem;
+  /* font-size: 1rem; */
 }
 
 .about__img {

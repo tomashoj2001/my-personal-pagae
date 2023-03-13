@@ -2,7 +2,8 @@
 
 .navbar {
   width: 100%;
-  padding: 1rem 15%;
+  height: 10vh;
+  padding: 0 15%;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -11,6 +12,7 @@
   align-items: center;
   background-color: var(--first-color);
   box-shadow: 0 0 1rem .5rem var(--shadow-color);
+  z-index: 20;
 }
 
 .navbar__name {
@@ -30,9 +32,7 @@
   transition: .3s;
 }
 
-.navbar__buttons button:hover {
-  color: var(--fifth-color);
-}
+.navbar__buttons button:hover { color: var(--fifth-color); }
 
 .navbar__buttons button.active {
   color: var(--fourth-color);

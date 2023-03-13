@@ -1,11 +1,15 @@
 import sun from "../Assets/sun.svg"
 import moon from "../Assets/moon.svg"
 import './DarkButton.css'
+import { useEffect } from "react"
 
-export default function DarkButton({ mode, setMode }) {
+export default function DarkButton({ mode, setMode }) {  
+  useEffect(() => {
+    localStorage.setItem('mode', mode)
+  }, [mode])
+  
   let root = document.querySelector(':root')
   let html = document.querySelector('html')
-  
   if (mode === 'light') {
     root.style.setProperty('--first-color', 'rgb(168, 218, 220)')  
     root.style.setProperty('--second-color', 'rgb(29, 93, 133)')  
@@ -25,10 +29,10 @@ export default function DarkButton({ mode, setMode }) {
   }
 
   return(
-    <>
-      <button className="dark-mode" onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
+    <div className="dark-mode-btn" onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
+      <button>
         <img src={mode === 'light' ? sun : moon} alt="mode" />
       </button>
-    </>
+    </div>
   )
 }

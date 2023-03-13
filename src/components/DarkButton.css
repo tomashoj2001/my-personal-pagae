@@ -1,22 +1,26 @@
-.dark-mode img{
-  height: 2rem;
-  width: 2rem;
+.dark-mode-btn {
+  /* background-color: var(--second-color); */
+  height: 7vh;
+  width: 7vh;
   position: fixed;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 1.5vh;
+  right: 2rem;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 30;
+}
+
+.dark-mode-btn img{
+  margin: 1vh;
+  height: 5vh;
+  width: 5vh;
   transition: all.3s;
   animation: rotation infinite 6s linear;
 }
 
-.dark-mode img:hover {
-  scale: 1.2;
-}
+.dark-mode-btn img:hover { scale: 1.2; }
 
 @keyframes rotation {
-  0% {
-    rotate: 0;
-  }
-  100% {
-    rotate: 360deg;
-  }
+  /* 0% { rotate: 0; } */
+  100% { rotate: 360deg; }
 }
