@@ -1,7 +1,22 @@
+import { useEffect, useState } from "react"
 import arrowLight from "../Assets/arrow-light.png"
 import arrowDark from "../Assets/arrow-dark.png"
 import ProjectPreview from "./ProjectPreview"
-import { useEffect, useState } from "react"
+import tourismDesktop from "../Assets/spacetourism-desktop.jpg"
+import tourismMobile from "../Assets/spacetourism-mobile.jpg"
+import calculatorDesktop from "../Assets/tipcalculator-desktop.jpg"
+import calculatorMobile from "../Assets/tipcalculator-mobile.jpg"
+import landingDesktop from "../Assets/landing-desktop.jpg"
+import landingMobile from "../Assets/landing-mobile.jpg"
+import formDesktop from "../Assets/form-desktop.jpg"
+import formMobile from "../Assets/form-mobile.jpg"
+
+const images = [
+  [tourismDesktop, tourismMobile],
+  [calculatorDesktop, calculatorMobile],
+  [landingDesktop, landingMobile],
+  [formDesktop, formMobile]
+]
 
 export default function ProjectInfo({ content, project, setProject, mode }) {
   let[desktop, setDesktop] = useState(0)
@@ -43,7 +58,7 @@ export default function ProjectInfo({ content, project, setProject, mode }) {
         </section>
       </section>
 
-      <ProjectPreview content={content} setDesktop={setDesktop} />
+      <ProjectPreview content={content} setDesktop={setDesktop} images={images[project]} />
     </div>
   )
 }

@@ -6,8 +6,8 @@
     ],
     "site": "https://fem-spacetourism-spa.netlify.app/",
     "code": "https://github.com/tomashoj2001/FEM-REACT-space_tourism_SPA",
-    "desktopImage": "/src/Assets/spacetourism-desktop.jpg",
-    "mobileImage": "/src/Assets/spacetourism-mobile.jpg"
+    "desktopImage": "../Assets/spacetourism-desktop.jpg",
+    "mobileImage": "../Assets/spacetourism-mobile.jpg"
   },
   "1": {
     "description": [
