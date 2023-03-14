@@ -27,10 +27,10 @@
 } */
 
 html {
-  /* background-image: url(/src/Assets/background-pattern.png); */
   /* background-image: url(/src/Assets/background-pattern-dark.png); */
+  background-image: url(/src/Assets/background-pattern.png);
   font-family: 'Poppins', sans-serif;
-  background: fixed;
+  background-position: fixed;
   color: var(--fifth-color);
   width: 100vw;
   scroll-behavior: smooth;
