@@ -11,7 +11,6 @@ import DarkButton from './components/DarkButton'
 function App() {
   let getMode = localStorage.getItem('mode') || 'light'
   let [page, setPage] = useState(0)
-  let [project, setProject] = useState(0)
   let [mode, setMode] = useState(getMode)
 
   useEffect(() => {
@@ -28,7 +27,7 @@ function App() {
       <Navbar setPage={setPage} />  
       <main>
         <About />
-        <Projects project={project} setProject={setProject} mode={mode}/>
+        <Projects mode={mode}/>
         <Contact mode={mode} />
       </main>
 

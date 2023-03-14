@@ -5,9 +5,7 @@
       "Acá puse en práctica mis conocimientos sobre React Router para hacer redirecciones sin la necesidad de recargar la página."
     ],
     "site": "https://fem-spacetourism-spa.netlify.app/",
-    "code": "https://github.com/tomashoj2001/FEM-REACT-space_tourism_SPA",
-    "desktopImage": "../Assets/spacetourism-desktop.jpg",
-    "mobileImage": "../Assets/spacetourism-mobile.jpg"
+    "code": "https://github.com/tomashoj2001/FEM-REACT-space_tourism_SPA"
   },
   "1": {
     "description": [
@@ -15,9 +13,7 @@
       "La idea es poner el monto de la cuenta, luego el porcentaje que se desea dejar de propina y, por último, entre cuántas personas se divide la cuenta."
     ],
     "site": "https://tomashoj2001.github.io/FEM-Tip-Calculator/",
-    "code": "https://github.com/tomashoj2001/FEM-Tip-Calculator",
-    "desktopImage": "/src/Assets/tipcalculator-desktop.jpg",
-    "mobileImage": "/src/Assets/tipcalculator-mobile.jpg"
+    "code": "https://github.com/tomashoj2001/FEM-Tip-Calculator"
   },
   "2": {
     "description": [
@@ -25,9 +21,7 @@
       "En este caso, la API recibe un link web y devuelve una versión recortada del mismo."
     ],
     "site": "https://tomashoj2001.github.io/FEM-URL-shortening-API-landing-page/",
-    "code": "https://github.com/tomashoj2001/FEM-URL-shortening-API-landing-page",
-    "desktopImage": "/src/Assets/landing-desktop.jpg",
-    "mobileImage": "/src/Assets/landing-mobile.jpg"
+    "code": "https://github.com/tomashoj2001/FEM-URL-shortening-API-landing-page"
   },
   "3": {
     "description": [
@@ -35,8 +29,6 @@
       "Consiste en 1) datos personales, 2) el plan a contratar, 3) los opcionales a agregar y 4) un resumen de la selección antes de confirmar."
     ],
     "site": "https://fem-multistep-form.netlify.app/",
-    "code": "https://github.com/tomashoj2001/FEM-REACT-multi-step-form",
-    "desktopImage": "/src/Assets/form-desktop.jpg",
-    "mobileImage": "/src/Assets/form-mobile.jpg"
+    "code": "https://github.com/tomashoj2001/FEM-REACT-multi-step-form"
   }
 }

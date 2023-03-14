@@ -1,29 +1,36 @@
 import { useEffect, useState } from "react"
 
-export default function ContactForm({ setMail }) {
-  let [asunto, setAsunto] = useState("")
-  let [mensaje, setMensaje] = useState("")
+export default function ContactForm({ handleMail }) {
+  // let [asunto, setAsunto] = useState("")
+  // let [mensaje, setMensaje] = useState("")
 
-  useEffect(() => {
-    setMail(`mailto:tomashojnadel@gmail.com?subject=${asunto}&body=${mensaje}`)
-  }, [asunto, mensaje])
+  // useEffect(() => {
+  //   setMail(`mailto:tomashojnadel@gmail.com?subject=${asunto}&body=${mensaje}`)
+  // }, [asunto, mensaje])
 
   let handleSubmit = (e) => {
     e.preventDefault()
-    window.location.href = `mailto:tomashojnadel@gmail.com?subject=${asunto}&body=${mensaje}`
+    handleMail()
+  }
+
+  let handleBlur = (e) => {
+    if (e.target.value === "") e.target.classList.add('error')
+    else e.target.classList.remove('error')
   }
 
   return (      
-     <form onSubmit={(e) => handleSubmit(e)}>
-       <div className="form__container">
-         <label htmlFor="subject">Asunto:</label>
-         <input type="text" id="subject" name="subject" autoComplete="off" placeholder="Hola Mundo" onChange={(e) => setAsunto(e.target.value)} required />
+    <form onSubmit={(e) => handleSubmit(e)}>
+      <div className="form__container">
+        <label htmlFor="subject">Asunto:</label>
+        {/* <input type="text" id="subject" name="subject" autoComplete="off" placeholder="Hola Mundo" onChange={(e) => setAsunto(e.target.value)} required /> */}
+        <input type="text" id="subject" name="subject" autoComplete="off" onBlur={(e) => handleBlur(e)} required />
 
-         <label htmlFor="message">Mensaje:</label>
-         <textarea id="message" name="message" onChange={(e) => setMensaje(e.target.value)} required />
-       </div>
-       
-       <button type="submit">Enviar email</button>
-     </form>  
+        <label htmlFor="message">Mensaje:</label>
+        {/* <textarea id="message" name="message" onChange={(e) => setMensaje(e.target.value)} required /> */}
+        <textarea id="message" name="message" onBlur={(e) => handleBlur(e)} required />
+      </div>
+      
+      <button type="submit" onClick={handleMail}>Enviar email</button>
+    </form>  
   )
 }

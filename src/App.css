@@ -36,7 +36,6 @@ html {
   font-family: 'Poppins', sans-serif;
   color: var(--fifth-color);
   width: 100vw;
-  scroll-behavior: smooth;
   overflow: hidden;
 }
 
@@ -94,4 +93,79 @@ img { display: block; }
   left: 3vw;
 }
 
-.page__navButtons img:hover { scale: 2.5; }
+@media (max-width: 600px) {
+  html {
+    /* background-image: url(/src/Assets/background-pattern-dark.png); */
+    /* background-image: url(/src/Assets/background-pattern.png); */
+    /* background-image: var(--light-bg); */
+    /* background-position: fixed; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* color: var(--fifth-color); */
+    /* width: 100vw; */
+    /* scroll-behavior: smooth; */
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+  
+  main {
+    /* margin: auto; */
+    margin-top: 8vh;
+    /* padding: 2rem 0; */
+    line-height: 1.2;
+    height: 92vh;
+    /* transition: transform .5s ease-in-out; */
+    /* display: flex; */
+    /* width: 300vw; */
+    /* transform: translateX(-100vw) */
+  }
+  
+  .container {
+    width: 85vw;
+    /* height: 75vh; */
+    margin: 2rem auto auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    /* background-color: var(--first-color); */
+    /* box-shadow: 0 0 2rem .5rem var(--shadow-color); */
+    /* z-index: 10; */
+  }
+  
+  h1 {
+    /* color: var(--fourth-color); */
+    /* color: var(--second-color); */
+    /* text-align: center; */
+    /* margin-bottom: 1rem; */
+    font-size: 4vw;
+  }
+  
+  /* h2 { color: var(--second-color); } */
+  
+  button {
+    /* font-family: inherit; */
+    /* background-color: inherit; */
+    /* border: none; */
+    /* cursor: pointer; */
+  }
+  
+  /* img { display: block; } */
+  
+  .page__navButtons img{
+    /* position: fixed; */
+    top: 45vh;
+    right: 1vw;
+    scale: 1.5;
+    /* cursor: pointer; */
+    /* transition: .3s; */
+  }
+  
+  .page__navButtons .left {
+    /* rotate: 180deg; */
+    left: 1vw;
+  }
+  
+  /* .page__navButtons img:hover { scale: 2.5; } */
+}
+
+@media (min-width: 600px) {
+  .page__navButtons img:hover { scale: 2.5; }
+}

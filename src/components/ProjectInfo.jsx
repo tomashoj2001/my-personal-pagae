@@ -11,12 +11,7 @@ import landingMobile from "../Assets/landing-mobile.jpg"
 import formDesktop from "../Assets/form-desktop.jpg"
 import formMobile from "../Assets/form-mobile.jpg"
 
-const images = [
-  [tourismDesktop, tourismMobile],
-  [calculatorDesktop, calculatorMobile],
-  [landingDesktop, landingMobile],
-  [formDesktop, formMobile]
-]
+const images = [[tourismDesktop, tourismMobile], [calculatorDesktop, calculatorMobile], [landingDesktop, landingMobile], [formDesktop, formMobile]]
 
 export default function ProjectInfo({ content, project, setProject, mode }) {
   let[desktop, setDesktop] = useState(0)

@@ -7,10 +7,22 @@ import locationDark from "../Assets/location-dark.png"
 import phoneLight from "../Assets/phone-light.png"
 import phoneDark from "../Assets/phone-dark.png"
 import ContactProfile from "./ContactProfile";
-import { useState } from "react";
+// import { useState } from "react";
 
 export default function Contact({ mode }) {
-  let [mail, setMail] = useState("mailto:tomashojnadel@gmail.com")
+  let handleMail = () => {
+    let subject = document.getElementById('subject')
+    let message = document.getElementById('message')
+
+    if (subject.value === "" || message.value === "") {
+      if (subject.value === "") subject.classList.add('error')
+      if (message.value === "") message.classList.add('error')
+    } else {
+      subject.classList.remove('error')
+      message.classList.remove('error')
+      window.location.href = `mailto:tomashojnadel@gmail.com?subject=${subject.value}&body=${message.value}`
+    }  
+  }
 
   return (
     <div className="container">
@@ -20,7 +32,7 @@ export default function Contact({ mode }) {
 
           <section className="data">
             <img src={mode === 'light' ? emailLight : emailDark} alt="email" />
-            <a href={mail}>tomashojnadel@gmail.com</a>
+            <p onClick={handleMail}>tomashojnadel@gmail.com</p>
             
             <img src={mode === 'light' ? phoneLight : phoneDark} alt="teléfono" />
             <a href="https://api.whatsapp.com/send?phone=5493541317326" target="_blank">+54 9 3541-317326</a>
@@ -37,7 +49,7 @@ export default function Contact({ mode }) {
         
         <div className="form">
           {/* <h2>Pasame tus datos y me comunico</h2> */}
-          <ContactForm setMail={setMail} />
+          <ContactForm handleMail={handleMail} />
         </div>
       </section>
     </div>

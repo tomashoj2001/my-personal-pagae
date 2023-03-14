@@ -32,9 +32,36 @@
   transition: .3s;
 }
 
-.navbar__buttons button:hover { color: var(--fifth-color); }
-
 .navbar__buttons button.active {
   color: var(--fourth-color);
   scale: 1.1;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100vw;
+    height: 10vh;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navbar__name {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .navbar__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  .navbar__buttons button {
+    font-size: 1.2rem;
+    padding: 0;
+    margin-left: 0;
+  }
+  .navbar__buttons button.active { scale: 1;}
+}
+
+@media (min-width: 600px) {
+  .navbar__buttons button:hover { color: var(--fifth-color); }
 }

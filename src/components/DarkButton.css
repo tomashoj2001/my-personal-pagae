@@ -18,9 +18,25 @@
   animation: rotation infinite 6s linear;
 }
 
-.dark-mode-btn img:hover { scale: 1.2; }
-
 @keyframes rotation {
   /* 0% { rotate: 0; } */
   100% { rotate: 360deg; }
+}
+
+@media (max-width: 600px) {
+  .dark-mode-btn {
+    height: 4vh;
+    width: 4vh;
+    top: 1vh;
+    right: 1vh;
+  }
+  .dark-mode-btn img {
+    margin: .5vh;
+    height: 3vh;
+    width: 3vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .dark-mode-btn img:hover { scale: 1.2; }
 }

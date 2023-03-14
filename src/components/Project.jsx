@@ -1,11 +1,13 @@
 import "./Project.css"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ProjectInfo from "./ProjectInfo";
 import ProjectNavbar from "./ProjectNavbar";
 import json from "../Assets/projects.json"
 
 
-export default function Projects({ project, setProject, mode }) {
+export default function Projects({ mode }) {
+  let [project, setProject] = useState(0)
+
   useEffect(() => {
     let buttons = [...document.querySelectorAll('.project-navbar button')]
     buttons.forEach(el => el.classList.remove('active'))
