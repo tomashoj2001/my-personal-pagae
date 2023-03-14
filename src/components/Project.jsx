@@ -11,8 +11,8 @@ export default function Projects({ project, setProject, mode }) {
     buttons.forEach(el => el.classList.remove('active'))
     buttons[project].classList.add('active')
 
-    // document.querySelector('a .project__img--desktop').src = json[project].desktopImage
-    // document.querySelector('a .project__img--mobile').src = json[project].mobileImage
+    document.querySelector('a .project__img--desktop').src = json[project].desktopImage
+    document.querySelector('a .project__img--mobile').src = json[project].mobileImage
   }, [project])
   
   return (

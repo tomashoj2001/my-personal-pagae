@@ -28,9 +28,10 @@
 
 html {
   /* background-image: url(/src/Assets/background-pattern-dark.png); */
-  background-image: url(/src/Assets/background-pattern.png);
-  font-family: 'Poppins', sans-serif;
+  /* background-image: url(/src/Assets/background-pattern.png); */
+  background-image: var(--bg-image);
   background-position: fixed;
+  font-family: 'Poppins', sans-serif;
   color: var(--fifth-color);
   width: 100vw;
   scroll-behavior: smooth;
@@ -91,6 +92,4 @@ img { display: block; }
   left: 3vw;
 }
 
-.page__navButtons img:hover {
-  scale: 2.5
-}
+.page__navButtons img:hover { scale: 2.5; }

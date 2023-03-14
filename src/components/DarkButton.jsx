@@ -1,6 +1,6 @@
+import './DarkButton.css'
 import sun from "../Assets/sun.svg"
 import moon from "../Assets/moon.svg"
-import './DarkButton.css'
 import { useEffect } from "react"
 
 export default function DarkButton({ mode, setMode }) {  
@@ -9,7 +9,6 @@ export default function DarkButton({ mode, setMode }) {
   }, [mode])
   
   let root = document.querySelector(':root')
-  // let html = document.querySelector('html')
   if (mode === 'light') {
     root.style.setProperty('--first-color', 'rgb(168, 218, 220)')  
     root.style.setProperty('--second-color', 'rgb(29, 93, 133)')  
@@ -17,7 +16,7 @@ export default function DarkButton({ mode, setMode }) {
     root.style.setProperty('--fourth-color', 'rgb(194, 3, 3)')  
     root.style.setProperty('--fifth-color', 'rgb(29, 53, 87)')
     root.style.setProperty('--shadow-color', 'rgba(0, 0, 0, .35)')
-    // html.style.backgroundImage = 'url(/src/Assets/background-pattern.png)'
+    root.style.setProperty('--bg-image', 'url(/src/Assets/background-pattern.png)')
   } else {
     root.style.setProperty('--first-color', 'rgb(0, 35, 55)')  
     root.style.setProperty('--second-color', 'rgb(0, 153, 195)')  
@@ -25,7 +24,7 @@ export default function DarkButton({ mode, setMode }) {
     root.style.setProperty('--fourth-color', 'rgb(240, 149, 96)')  
     root.style.setProperty('--fifth-color', 'rgb(202, 240, 248)')
     root.style.setProperty('--shadow-color', 'rgba(200, 200, 200, .12)')
-    // html.style.backgroundImage = 'url(/src/Assets/background-pattern-dark.png)'    
+    root.style.setProperty('--bg-image', 'url(/src/Assets/background-pattern-dark.png)')
   }
 
   return(
