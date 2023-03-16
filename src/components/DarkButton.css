@@ -1,5 +1,4 @@
 .dark-mode-btn {
-  /* background-color: var(--second-color); */
   height: 7vh;
   width: 7vh;
   position: fixed;
@@ -19,7 +18,6 @@
 }
 
 @keyframes rotation {
-  /* 0% { rotate: 0; } */
   100% { rotate: 360deg; }
 }
 

@@ -19,7 +19,7 @@ export default function ContactForm({ handleMail }) {
   }
 
   return (      
-    <form onSubmit={(e) => handleSubmit(e)}>
+    <form className="form" onSubmit={(e) => handleSubmit(e)}>
       <div className="form__container">
         <label htmlFor="subject">Asunto:</label>
         {/* <input type="text" id="subject" name="subject" autoComplete="off" placeholder="Hola Mundo" onChange={(e) => setAsunto(e.target.value)} required /> */}

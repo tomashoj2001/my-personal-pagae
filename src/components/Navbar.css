@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 
 .navbar {
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   padding: 0 15%;
   margin: 0 auto;
@@ -39,8 +39,6 @@
 
 @media (max-width: 600px) {
   .navbar {
-    width: 100vw;
-    height: 10vh;
     padding: 0;
     flex-direction: column;
     justify-content: space-evenly;
@@ -64,4 +62,5 @@
 
 @media (min-width: 600px) {
   .navbar__buttons button:hover { color: var(--fifth-color); }
+  .navbar__buttons button.active { color: var(--fourth-color); }
 }

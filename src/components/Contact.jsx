@@ -47,10 +47,7 @@ export default function Contact({ mode }) {
           <ContactProfile />
         </div>
         
-        <div className="form">
-          {/* <h2>Pasame tus datos y me comunico</h2> */}
-          <ContactForm handleMail={handleMail} />
-        </div>
+        <ContactForm handleMail={handleMail} />
       </section>
     </div>
   )
