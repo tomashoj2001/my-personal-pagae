@@ -39,6 +39,7 @@
 
 @media (max-width: 600px) {
   .navbar {
+    height: 8vh;
     padding: 0;
     flex-direction: column;
     justify-content: space-evenly;
@@ -48,16 +49,7 @@
     text-align: center;
     font-size: 1.8rem;
   }
-  .navbar__buttons {
-    display: flex;
-    gap: 1rem;
-  }
-  .navbar__buttons button {
-    font-size: 1.2rem;
-    padding: 0;
-    margin-left: 0;
-  }
-  .navbar__buttons button.active { scale: 1;}
+  .navbar__buttons { display: none; }
 }
 
 @media (min-width: 600px) {

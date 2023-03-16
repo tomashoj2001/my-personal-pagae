@@ -25,8 +25,8 @@
   .dark-mode-btn {
     height: 4vh;
     width: 4vh;
-    top: 1vh;
-    right: 1vh;
+    top: 1.5vh;
+    right: 1.5vh;
   }
   .dark-mode-btn img {
     margin: .5vh;

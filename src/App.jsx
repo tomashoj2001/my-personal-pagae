@@ -9,9 +9,8 @@ import Projects from './components/Project'
 import DarkButton from './components/DarkButton'
 
 function App() {
-  let getMode = localStorage.getItem('mode') || 'light'
   let [page, setPage] = useState(0)
-  let [mode, setMode] = useState(getMode)
+  let [mode, setMode] = useState(localStorage.getItem('mode') || 'light')
 
   useEffect(() => {
     let buttons = [...document.querySelectorAll(".navbar__buttons button")]

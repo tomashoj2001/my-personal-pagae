@@ -25,10 +25,10 @@ html {
 
 main {
   margin-top: 10vh;
+  width: 300vw;
   height: 90vh;
   transition: transform .5s ease-in-out;
   display: flex;
-  width: 300vw;
 }
 
 .container {
@@ -75,13 +75,15 @@ img { display: block; }
 
 @media (max-width: 600px) {
   html {
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow-y: auto;
   }  
   main {
-    margin-top: 10vh;
+    margin-top: 8vh;
+    width: 100vw;
     height: auto;
-    padding-bottom: 2rem;
+    padding-bottom: 20vh;
+    flex-direction: column;
+    gap: 10vh;
   }  
   .container {
     width: 85vw;
@@ -91,12 +93,7 @@ img { display: block; }
     border-radius: 1rem;
   }  
   h1 { font-size: 4vw; }  
-  .page__navButtons img{
-    top: 45vh;
-    right: 1vw;
-    scale: 1.5;
-  }  
-  .page__navButtons .left { left: 1vw; }
+  .page__navButtons img{ display: none; }  
 }
 
 @media (min-width: 600px) {
