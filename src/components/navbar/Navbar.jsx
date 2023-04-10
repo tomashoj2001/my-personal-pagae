@@ -1,6 +1,6 @@
 import "./Navbar.css"
 
-export default function Navbar({setPage}) {
+export default function Navbar({ setPage }) {
   return (
     <nav className="navbar">
       <h2 className="navbar__name" onClick={() => setPage(0)}>Tomás Hojnadel</h2>

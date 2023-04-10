@@ -1,13 +1,14 @@
-import "./Contact.css"
-import ContactForm from "./ContactForm";
 import emailLight from "../Assets/email-light.png"
 import emailDark from "../Assets/email-dark.png"
 import locationLight from "../Assets/location-light.png"
 import locationDark from "../Assets/location-dark.png"
 import phoneLight from "../Assets/phone-light.png"
 import phoneDark from "../Assets/phone-dark.png"
+
+import ContactForm from "./ContactForm";
 import ContactProfile from "./ContactProfile";
-// import { useState } from "react";
+
+import "./Contact.css"
 
 export default function Contact({ mode }) {
   let handleMail = () => {

@@ -1,12 +1,15 @@
-import './App.css'
 import { useEffect, useState } from 'react'
+
 import arrowLight from "./Assets/bigArrow-light.png"
 import arrowDark from "./Assets/bigArrow-dark.png"
-import About from './components/About'
-import Contact from './components/Contact'
-import Navbar from './components/Navbar'
-import Projects from './components/Project'
-import DarkButton from './components/DarkButton'
+
+import About from './components/about/About'
+import Contact from './components/contact/Contact'
+import Navbar from './components/navbar/Navbar'
+import Projects from './components/project/Project'
+import DarkButton from './components/dark-button/DarkButton'
+
+import './App.css'
 
 function App() {
   let [page, setPage] = useState(0)

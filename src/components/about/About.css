@@ -21,7 +21,8 @@
 }
 
 .about__img {
-  background-image: url(../Assets/programando.jpg);
+  background-image: url(../Assets/portrait4.jpg);
+  background-position: 10%;
   background-size: cover;
   width: 100%;
   height: 100%;

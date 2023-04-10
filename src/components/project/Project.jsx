@@ -1,8 +1,11 @@
-import "./Project.css"
 import { useEffect, useState } from "react";
+
+import json from "../../Assets/projects.json"
+
 import ProjectInfo from "./ProjectInfo";
 import ProjectNavbar from "./ProjectNavbar";
-import json from "../Assets/projects.json"
+
+import "./Project.css"
 
 
 export default function Projects({ mode }) {

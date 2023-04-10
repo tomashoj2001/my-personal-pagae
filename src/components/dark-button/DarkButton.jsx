@@ -1,7 +1,9 @@
-import './DarkButton.css'
+import { useEffect } from "react"
+
 import sun from "../Assets/sun.svg"
 import moon from "../Assets/moon.svg"
-import { useEffect } from "react"
+
+import './DarkButton.css'
 
 export default function DarkButton({ mode, setMode }) {  
   useEffect(() => {
