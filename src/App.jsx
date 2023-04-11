@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react'
 
-import About from '@/components/About'
-import Contact from '@/components/Contact'
-import DarkButton from '@/components/DarkButton'
-import Navbar from '@/components/Navbar'
-import NavButtons from '@/components/NavButtons'
-import Projects from '@/components/Project'
+import About from './components/About'
+import Contact from './components/Contact'
+import DarkButton from './components/DarkButton'
+import Navbar from './components/Navbar'
+import NavButtons from './components/NavButtons'
+import Projects from './components/Project'
 
-import '@/App.css'
+import './App.css'
 
 function App() {
   let [page, setPage] = useState(0)
