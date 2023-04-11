@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import About from './components/About'
+import About from './components/About/'
 import Contact from './components/Contact'
 import DarkButton from './components/DarkButton'
 import Navbar from './components/Navbar'
