@@ -10,12 +10,14 @@ import landingDesktop from "../../assets/landing-desktop.jpg"
 import landingMobile from "../../assets/landing-mobile.jpg"
 import formDesktop from "../../assets/form-desktop.jpg"
 import formMobile from "../../assets/form-mobile.jpg"
+import json from "../../assets/projects.json"
 
 import ProjectPreview from "./ProjectPreview"
 
 const images = [[tourismDesktop, tourismMobile], [calculatorDesktop, calculatorMobile], [landingDesktop, landingMobile], [formDesktop, formMobile]]
 
-export default function ProjectInfo({ content, project, setProject, mode }) {
+export default function ProjectInfo({ project, setProject, mode }) {
+  let content = json[project]
   let[desktop, setDesktop] = useState(0)
 
   useEffect(() => {
