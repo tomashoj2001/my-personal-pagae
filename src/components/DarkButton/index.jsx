@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 
-import sun from "@/assets/sun.svg"
-import moon from "@/assets/moon.svg"
+import sun from "../../assets/sun.svg"
+import moon from "../../assets/moon.svg"
 
 import './DarkButton.css'
 
