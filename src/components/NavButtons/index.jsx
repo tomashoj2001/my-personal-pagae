@@ -1,5 +1,5 @@
-import arrowLight from "../../assets/bigArrow-light.png"
-import arrowDark from "../../assets/bigArrow-dark.png"
+import arrowLight from "@/assets/bigArrow-light.png"
+import arrowDark from "@/assets/bigArrow-dark.png"
 
 import "./NavButtons.css"
 
