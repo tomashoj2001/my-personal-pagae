@@ -1,5 +1,5 @@
-import arrowLight from "/src/assets/bigArrow-light.png"
-import arrowDark from "/src/assets/bigArrow-dark.png"
+import arrowLight from "src/assets/bigArrow-light.png"
+import arrowDark from "src/assets/bigArrow-dark.png"
 
 export default function NavButtons({mode, page, setPage}) {
   return(
