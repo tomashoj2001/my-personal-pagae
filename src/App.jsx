@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react'
 
-import arrowLight from "./Assets/bigArrow-light.png"
-import arrowDark from "./Assets/bigArrow-dark.png"
-
 import About from './components/About'
 import Contact from './components/Contact'
-import Navbar from './components/Navbar'
-import Projects from './components/Project'
 import DarkButton from './components/DarkButton'
+import Navbar from './components/Navbar'
+import NavButtons from './components/NavButtons'
+import Projects from './components/Project'
 
 import './App.css'
 
@@ -34,15 +32,7 @@ function App() {
       </main>
 
       <DarkButton mode={mode} setMode={setMode} />
-
-      <section className="page__navButtons">
-        {page > 0 && 
-          <img alt='flecha' className='left' src={mode === 'light' ? arrowLight : arrowDark} onClick={() => setPage(page => page - 1)} />  
-        }
-        {page < 2 && 
-          <img alt='flecha' className='right' src={mode === 'light' ? arrowLight : arrowDark} onClick={() => setPage(page => page + 1)} />  
-        }
-      </section>
+      <NavButtons mode={mode} page={page} setPage={setPage} />
     </>
   )
 }

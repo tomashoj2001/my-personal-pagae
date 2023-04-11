@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  padding: 0 15%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--first-color);
+  box-shadow: 0 0 1rem .5rem var(--shadow-color);
+  z-index: 20;
+}
+
+.navbar__name {
+  color: var(--fourth-color);
+  font-size: 2rem;
+  font-family: 'Kalam', cursive;
+  cursor: pointer;
+}
+
+.navbar__buttons button{
+  color: var(--second-color);
+  font-weight: 700;
+  margin-left: 1rem;
+  padding: .5rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: .3s;
+}
+
+.navbar__buttons button.active {
+  color: var(--fourth-color);
+  scale: 1.1;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 8vh;
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .navbar__name {
+    width: 100%;
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  .navbar__buttons { display: none; }
+}
+
+@media (min-width: 600px) {
+  .navbar__buttons button:hover { color: var(--fifth-color); }
+  .navbar__buttons button.active { color: var(--fourth-color); }
+}
