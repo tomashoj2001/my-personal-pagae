@@ -21,7 +21,7 @@
 }
 
 .about__img {
-  background-image: url(/src/Assets/portrait.webp);
+  background-image: url(/src/assets/portrait.webp);
   background-position: 10%;
   background-size: cover;
   width: 100%;
