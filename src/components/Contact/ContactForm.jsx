@@ -1,4 +1,4 @@
-import useMail from "/src/hooks/useMail"
+import useMail from "../../hooks/useMail"
 
 export default function ContactForm() {
   let {handleMail, handleBlur, handleSubmit} = useMail()

@@ -1,0 +1,21 @@
+.nav-buttons img{
+  position: fixed;
+  top: 52.5vh;
+  right: 3vw;
+  scale: 2;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.nav-buttons .left {
+  rotate: 180deg;
+  left: 3vw;
+}
+
+@media (max-width: 600px) {
+  .nav-buttons img{ display: none; }  
+}
+
+@media (min-width: 600px) {
+  .nav-buttons img:hover { scale: 2.5; }
+}

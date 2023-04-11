@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import json from "/src/Assets/projects.json"
+import json from "../../assets/projects.json"
 
 import ProjectInfo from "./ProjectInfo";
 import ProjectNavbar from "./ProjectNavbar";

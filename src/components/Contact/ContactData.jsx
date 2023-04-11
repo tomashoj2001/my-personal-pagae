@@ -1,11 +1,11 @@
-import emailLight from "/src/assets/email-light.png"
-import emailDark from "/src/assets/email-dark.png"
-import locationLight from "/src/assets/location-light.png"
-import locationDark from "/src/assets/location-dark.png"
-import phoneLight from "/src/assets/phone-light.png"
-import phoneDark from "/src/assets/phone-dark.png"
+import emailLight from "../../assets/email-light.png"
+import emailDark from "../../assets/email-dark.png"
+import locationLight from "../../assets/location-light.png"
+import locationDark from "../../assets/location-dark.png"
+import phoneLight from "../../assets/phone-light.png"
+import phoneDark from "../../assets/phone-dark.png"
 
-import useMail from "/src/hooks/useMail"
+import useMail from "../../hooks/useMail"
 
 export default function ContactData({ mode }) {
   let {handleMail} = useMail()
