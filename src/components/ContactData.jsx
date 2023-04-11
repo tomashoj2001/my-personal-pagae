@@ -1,9 +1,9 @@
-import emailLight from "../assets/email-light.png"
-import emailDark from "../assets/email-dark.png"
-import locationLight from "../assets/location-light.png"
-import locationDark from "../assets/location-dark.png"
-import phoneLight from "../assets/phone-light.png"
-import phoneDark from "../assets/phone-dark.png"
+import emailLight from "../Assets/email-light.png"
+import emailDark from "../Assets/email-dark.png"
+import locationLight from "../Assets/location-light.png"
+import locationDark from "../Assets/location-dark.png"
+import phoneLight from "../Assets/phone-light.png"
+import phoneDark from "../Assets/phone-dark.png"
 
 import useMail from "../hooks/useMail"
 

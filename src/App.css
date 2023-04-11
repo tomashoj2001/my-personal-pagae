@@ -10,8 +10,8 @@
 }
 
 :root {
-  --light-bg: url(/src/assets/background-pattern.png);
-  --dark-bg: url(/src/assets/background-pattern-dark.png);
+  --light-bg: url(/src/Assets/background-pattern.png);
+  --dark-bg: url(/src/Assets/background-pattern-dark.png);
 }
 
 html {
