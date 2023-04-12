@@ -1,3 +1,5 @@
+import { useContext } from "react"
+
 import emailLight from "@/Assets/email-light.png"
 import emailDark from "@/Assets/email-dark.png"
 import locationLight from "@/Assets/location-light.png"
@@ -7,8 +9,11 @@ import phoneDark from "@/Assets/phone-dark.png"
 
 import useMail from "@/hooks/useMail"
 
-export default function ContactData({ mode }) {
+import ThemeContext from "@/context/ThemeContext"
+
+export default function ContactData() {
   let {handleMail} = useMail()
+  let {mode} = useContext(ThemeContext)
 
   return (
     <section className="data">

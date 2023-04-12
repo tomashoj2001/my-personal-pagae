@@ -1,7 +1,9 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 
-export default function usePage() {
-  let [page, setPage] = useState(0)
+const Context = React.createContext({})
+
+export function PageContextProvider ({children}) {
+  const [page, setPage] = useState(0)
 
   useEffect(() => {
     let buttons = [...document.querySelectorAll(".navbar__buttons button")]
@@ -12,5 +14,7 @@ export default function usePage() {
     main.style.transform = `translateX(${-100 * page}vw)`
   }, [page])
 
-  return {page, setPage}
+  return <Context.Provider value={{ page, setPage }}>{children}</Context.Provider>
 }
+
+export default Context

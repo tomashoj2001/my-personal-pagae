@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 
 import arrowLight from "@/Assets/arrow-light.png"
 import arrowDark from "@/Assets/arrow-dark.png"
@@ -12,13 +12,16 @@ import formDesktop from "@/Assets/form-desktop.jpg"
 import formMobile from "@/Assets/form-mobile.jpg"
 import json from "@/Assets/projects.json"
 
+import ThemeContext from "@/context/ThemeContext"
+
 import ProjectPreview from "./ProjectPreview"
 
 const images = [[tourismDesktop, tourismMobile], [calculatorDesktop, calculatorMobile], [landingDesktop, landingMobile], [formDesktop, formMobile]]
 
-export default function ProjectInfo({ project, setProject, mode }) {
+export default function ProjectInfo({ project, setProject }) {
   let content = json[project]
-  let[desktop, setDesktop] = useState(0)
+  let {mode} = useContext(ThemeContext)
+  let [desktop, setDesktop] = useState(0)
 
   useEffect(() => {
     let buttons = [...document.querySelectorAll('.preview__buttons button')]
@@ -46,11 +49,11 @@ export default function ProjectInfo({ project, setProject, mode }) {
         </section>
 
         <section className="project__navButtons">
-          <img alt="flecha" src={mode === 'light' ? arrowLight : arrowDark} onClick={() => {
+          <img alt="flecha izquierda" src={mode === 'light' ? arrowLight : arrowDark} onClick={() => {
               project > 0 ? setProject(project - 1) : setProject(3)} 
             } 
           />
-          <img alt="flecha" src={mode === 'light' ? arrowLight : arrowDark} onClick={() => {
+          <img alt="flecha derecha" src={mode === 'light' ? arrowLight : arrowDark} onClick={() => {
               project < 3 ? setProject(project + 1) : setProject(0)} 
             } 
           />
