@@ -23,7 +23,7 @@ function App() {
         </main>
 
         <DarkButton />
-        <NavButtons/>
+        <NavButtons size={'big'} setMethod={'page'} />
         
       </ThemeProvider>
     </PageContextProvider>
