@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 
-
 const Context = React.createContext({})
 
 export function ThemeProvider({ children }) {
@@ -19,8 +18,7 @@ export function ThemeProvider({ children }) {
     root.style.setProperty('--fourth-color', 'rgb(194, 3, 3)')  
     root.style.setProperty('--fifth-color', 'rgb(29, 53, 87)')
     root.style.setProperty('--shadow-color', 'rgba(0, 0, 0, .35)')
-    html.style.backgroundImage = 'var(--light-bg)'
-    // bigArrow.map(arrow => arrow.src=`arrowLight`)      
+    html.style.backgroundImage = 'var(--light-bg)'     
   } else {
     root.style.setProperty('--first-color', 'rgb(0, 35, 55)')  
     root.style.setProperty('--second-color', 'rgb(0, 153, 195)')  
@@ -29,7 +27,6 @@ export function ThemeProvider({ children }) {
     root.style.setProperty('--fifth-color', 'rgb(202, 240, 248)')
     root.style.setProperty('--shadow-color', 'rgba(200, 200, 200, .12)')
     html.style.backgroundImage = 'var(--dark-bg)'
-    // bigArrow.map(arrow => arrow.src=`arrowDark`)
   }
 
   return <Context.Provider value={{mode, setMode}}>{children}</Context.Provider>

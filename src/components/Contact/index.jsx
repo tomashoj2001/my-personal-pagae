@@ -4,8 +4,7 @@ import ContactProfile from "./ContactProfile";
 
 import "./Contact.css"
 
-export default function Contact() {
-  
+export default function Contact() {  
   return (
     <div className="container">
       <h1>Pongámonos en contacto :)</h1>
@@ -14,7 +13,7 @@ export default function Contact() {
           <ContactData />          
           <ContactProfile/>
         </div>
-        
+                
         <ContactForm />
       </section>
     </div>

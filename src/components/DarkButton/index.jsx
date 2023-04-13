@@ -1,10 +1,7 @@
 import { useContext } from "react"
-
 import sun from "@/Assets/sun.svg"
 import moon from "@/Assets/moon.svg"
-
 import ThemeContext from "@/context/ThemeContext"
-
 import './DarkButton.css'
 
 export default function DarkButton() { 

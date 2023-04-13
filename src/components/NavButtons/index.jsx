@@ -27,8 +27,16 @@ export default function NavButtons({ size, setMethod, method }) {
   if (size === 'small') {
     return (
       <section className="project__navButtons">
-        <img alt="flecha izquierda" src={imgs[mode][size]} onClick={() => method > 0 ? setMethod(method - 1) : setMethod(3)} />
-        <img alt="flecha derecha" src={imgs[mode][size]} onClick={() => method < 3 ? setMethod(method + 1) : setMethod(0)} />
+        <img 
+          alt="flecha izquierda" 
+          src={imgs[mode][size]}
+          onClick={() => method > 0 ? setMethod(method - 1) : setMethod(3)}
+        />
+        <img 
+          alt="flecha derecha" 
+          src={imgs[mode][size]}
+          onClick={() => method < 3 ? setMethod(method + 1) : setMethod(0)}
+        />
       </section>
     )
   }
@@ -37,10 +45,20 @@ export default function NavButtons({ size, setMethod, method }) {
   return(
     <section className="nav-buttons">
       {page > 0 && 
-        <img alt='flecha izquierda' className='left' src={imgs[mode][size]} onClick={() => setPage(page => page - 1)} />  
+        <img
+          alt='flecha izquierda'
+          className='left'
+          src={imgs[mode][size]}
+          onClick={() => setPage(page => page - 1)}
+        /> 
       }
       {page < 2 && 
-        <img alt='flecha derecha' className='right' src={imgs[mode][size]} onClick={() => setPage(page => page + 1)} />  
+        <img
+          alt='flecha derecha' 
+          className='right'
+          src={imgs[mode][size]}
+          onClick={() => setPage(page => page + 1)}
+        /> 
       }
     </section>
   )
