@@ -2,6 +2,6 @@
 
 Hey! I hope you are great.
 
-Look at my personal page => tomashojnadel.netlify.com
+Look at [my personal page](tomashojnadel.netlify.com)
 
 Thanks :)
