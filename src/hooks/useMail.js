@@ -23,5 +23,9 @@ export default function useMail () {
     handleMail()
   }
 
-  return { handleMail, handleBlur, handleSubmit }
+  let handleChange = (e) => {
+    e.target.classList.remove('error')
+  }
+
+  return { handleMail, handleBlur, handleSubmit, handleChange }
 }
