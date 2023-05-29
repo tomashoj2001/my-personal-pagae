@@ -23,5 +23,5 @@ export default function useMail () {
     handleMail()
   }
 
-  return {handleMail, handleBlur, handleSubmit}
+  return { handleMail, handleBlur, handleSubmit }
 }

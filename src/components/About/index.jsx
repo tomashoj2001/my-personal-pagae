@@ -8,7 +8,7 @@ export default function About() {
         <section className="about__text">
           <div>
             <p>Tengo 21 años y estudio Desarrollo Front-End hace un año y medio.</p>
-            <p>Actualmente sé HTML, CSS, Javascipt y React. Sigo aprendiendo estas tecnologías a través de constantes prácticas y cursos. Sinceramente disfruto mucho poner en práctica los conocimientos que adquiero.</p>
+            <p>Actualmente sé HTML, CSS, Javascipt, React, TypeScript y Tailwind. Sigo aprendiendo estas tecnologías a través de constantes prácticas y cursos. Sinceramente disfruto mucho poner en práctica los conocimientos que adquiero.</p>
             <p>Soy de Argentina, por lo que mi comunicación más frecuente es por medio del español. De todos modos, aprendí italiano e inglés durante 14 y 10 años (respectivamente). Poseo certificado de nivel B2 en ambos idiomas.</p>
             <p>Gracias al inglés puedo obtener recursos de estudio ilimitados. Calculo que más de la mitad de mi aprendizaje de Front-End fue en este idioma.</p>
           </div>

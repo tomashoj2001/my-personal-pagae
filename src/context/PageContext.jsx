@@ -14,7 +14,7 @@ export function PageContextProvider ({children}) {
     main.style.transform = `translateX(${-100 * page}vw)`
   }, [page])
 
-  return <Context.Provider value={{ page, setPage }}>{children}</Context.Provider>
+  return <Context.Provider value={{page, setPage}}>{children}</Context.Provider>
 }
 
 export default Context

@@ -12,8 +12,8 @@ import useMail from "@/hooks/useMail"
 import ThemeContext from "@/context/ThemeContext"
 
 export default function ContactData() {
-  let {handleMail} = useMail()
-  let {mode} = useContext(ThemeContext)
+  let { handleMail } = useMail()
+  let { mode } = useContext(ThemeContext)
 
   return (
     <section className="data">

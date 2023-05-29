@@ -4,7 +4,6 @@ import DarkButton from './components/DarkButton'
 import Navbar from './components/Navbar'
 import NavButtons from './components/NavButtons'
 import Projects from './components/Project'
-
 import { PageContextProvider } from './context/PageContext'
 import { ThemeProvider } from './context/ThemeContext'
 

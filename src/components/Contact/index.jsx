@@ -12,8 +12,7 @@ export default function Contact() {
         <div className="contact__container">
           <ContactData />          
           <ContactProfile/>
-        </div>
-                
+        </div>                
         <ContactForm />
       </section>
     </div>
