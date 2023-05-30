@@ -25,16 +25,17 @@ export default function NavButtons({ size, setMethod, method }) {
   let {mode} = useContext(ThemeContext)
   
   if (size === 'small') {
+    const isDesktop = window.innerWidth > 700 ? 'small' : 'big'
     return (
       <section className="project__navButtons">
         <img 
           alt="flecha izquierda" 
-          src={imgs[mode][size]}
+          src={imgs[mode][isDesktop]}
           onClick={() => method > 0 ? setMethod(method - 1) : setMethod(3)}
         />
         <img 
           alt="flecha derecha" 
-          src={imgs[mode][size]}
+          src={imgs[mode][isDesktop]}
           onClick={() => method < 3 ? setMethod(method + 1) : setMethod(0)}
         />
       </section>
