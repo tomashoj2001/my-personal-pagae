@@ -86,11 +86,13 @@ button[type="submit"] {
     font-size: .8rem;
     display: flex;
     flex-direction: column-reverse;
+    flex-direction: column;
     gap: 1rem;
   }
+  .contact__container {margin-left: 0;}
   .data {
     margin-top: 1rem;
-    gap: .5rem;
+    gap: 1rem;
   }  
   .profiles {
     justify-content: space-between;
