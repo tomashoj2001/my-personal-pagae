@@ -4,12 +4,17 @@ import calculatorDesktop from "@/Assets/tipcalculator-desktop.jpg"
 import calculatorMobile from "@/Assets/tipcalculator-mobile.jpg"
 import landingDesktop from "@/Assets/landing-desktop.jpg"
 import landingMobile from "@/Assets/landing-mobile.jpg"
-import formDesktop from "@/Assets/form-desktop.jpg"
-import formMobile from "@/Assets/form-mobile.jpg"
+import countriesDesktopLight from "@/Assets/country-desktop-light.jpg"
+import countriesDesktopDark from "@/Assets/country-desktop-dark.jpg"
+import countriesMobileLight from "@/Assets/country-mobile-light.jpg"
+import countriesMobileDark from "@/Assets/country-mobile-dark.jpg"
 
-const images = [[tourismDesktop, tourismMobile], [calculatorDesktop, calculatorMobile], [landingDesktop, landingMobile], [formDesktop, formMobile]]
+export default function ProjectPreview({ site, setDesktop, project, mode }) {
+  const images = [[tourismDesktop, tourismMobile], [calculatorDesktop, calculatorMobile]]
+  if (mode === 'light') images.push([countriesDesktopLight, countriesMobileLight])
+  else images.push([countriesDesktopDark, countriesMobileDark])
+  images.push([landingDesktop, landingMobile])
 
-export default function ProjectPreview({ site, setDesktop, project }) {
   const img = images[project]
 
   return (

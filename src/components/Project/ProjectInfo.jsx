@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useContext } from "react"
 
 import json from "@/Assets/projects.json"
 import useDesktop from "@/hooks/useDesktop"
@@ -6,7 +6,12 @@ import useDesktop from "@/hooks/useDesktop"
 import ProjectPreview from "./ProjectPreview"
 import NavButtons from "../NavButtons"
 
+import ThemeContext from "@/context/ThemeContext"
+
+
 export default function ProjectInfo({ project, setProject }) {
+  const { mode } = useContext(ThemeContext)
+
   let content = json[project]
   
   let [desktop, setDesktop] = useState(0)
@@ -26,7 +31,7 @@ export default function ProjectInfo({ project, setProject }) {
         <NavButtons size={'small'} setMethod={setProject} method={project} />
       </section>
 
-      <ProjectPreview site={content.site} setDesktop={setDesktop} project={project} />
+      <ProjectPreview site={content.site} setDesktop={setDesktop} project={project} mode={mode} />
     </div>
   )
 }

@@ -17,18 +17,18 @@
   },
   "2": {
     "description": [
+      "Una wikipedia con todos los países del mundo, incluyendo filtros de búsqueda y tema claro/oscuro.",
+      "Cada país tiene su propia página interna, donde se encuentra información de todo tipo, como por ejemplo la capital, población, paises límitrofes, etc."
+    ],
+    "site": "https://fem-country-app.netlify.app/",
+    "code": "https://github.com/tomashoj2001/FEM-REACT-CountryApp"
+  },
+  "3": {
+    "description": [
       "Una Landing Page con consumo de API.",
       "En este caso, la API recibe un link web y devuelve una versión recortada del mismo."
     ],
     "site": "https://tomashoj2001.github.io/FEM-URL-shortening-API-landing-page/",
     "code": "https://github.com/tomashoj2001/FEM-URL-shortening-API-landing-page"
-  },
-  "3": {
-    "description": [
-      "Un formulario de 4 pasos para la contratación de un servicio.",
-      "Consiste en 1) datos personales, 2) el plan a contratar, 3) los opcionales a agregar y 4) un resumen de la selección antes de confirmar."
-    ],
-    "site": "https://fem-multistep-form.netlify.app/",
-    "code": "https://github.com/tomashoj2001/FEM-REACT-multi-step-form"
   }
 }
