@@ -89,7 +89,7 @@ button[type="submit"] {
     flex-direction: column;
     gap: 1rem;
   }
-  .contact__container {margin-left: 0;}
+  /* .contact__container {margin-left: 0;} */
   .data {
     margin-top: 1rem;
     gap: 1rem;
