@@ -3,7 +3,7 @@
 .navbar {
   width: 100vw;
   height: 10vh;
-  padding: 0 15%;
+  padding: 0 10vw;
   margin: 0 auto;
   position: fixed;
   top: 0;
@@ -40,13 +40,9 @@
 @media (max-width: 600px) {
   .navbar {
     height: 8vh;
-    padding: 0;
-    flex-direction: column;
-    justify-content: space-evenly;
   }
   .navbar__name {
     width: 100%;
-    text-align: center;
     font-size: 1.8rem;
   }
   .navbar__buttons {

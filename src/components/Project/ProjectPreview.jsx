@@ -2,22 +2,24 @@ import tourismDesktop from "@/Assets/spacetourism-desktop.jpg";
 import tourismMobile from "@/Assets/spacetourism-mobile.jpg";
 import calculatorDesktop from "@/Assets/tipcalculator-desktop.jpg";
 import calculatorMobile from "@/Assets/tipcalculator-mobile.jpg";
-import landingDesktop from "@/Assets/landing-desktop.jpg";
-import landingMobile from "@/Assets/landing-mobile.jpg";
+import landingDesktopLight from "@/Assets/landing-desktop-light.jpg";
+import landingMobileLight from "@/Assets/landing-mobile-light.jpg";
+import landingDesktopDark from "@/Assets/landing-desktop-dark.jpg";
+import landingMobileDark from "@/Assets/landing-mobile-dark.jpg";
 import countriesDesktopLight from "@/Assets/country-desktop-light.jpg";
 import countriesDesktopDark from "@/Assets/country-desktop-dark.jpg";
 import countriesMobileLight from "@/Assets/country-mobile-light.jpg";
 import countriesMobileDark from "@/Assets/country-mobile-dark.jpg";
 
 export default function ProjectPreview({ site, setDesktop, project, mode }) {
-  const images = [
-    [tourismDesktop, tourismMobile],
-    [calculatorDesktop, calculatorMobile],
-  ];
+  const images = [];
+  if (mode === "light") images.push([landingDesktopLight, landingMobileLight]);
+  else images.push([landingDesktopDark, landingMobileDark]);
+  images.push([tourismDesktop, tourismMobile]);
   if (mode === "light")
     images.push([countriesDesktopLight, countriesMobileLight]);
   else images.push([countriesDesktopDark, countriesMobileDark]);
-  images.push([landingDesktop, landingMobile]);
+  images.push([calculatorDesktop, calculatorMobile]);
 
   const img = images[project];
 

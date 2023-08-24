@@ -1,12 +1,8 @@
 .dark-mode-btn {
   height: 7vh;
   width: 7vh;
-  position: fixed;
-  top: 1.5vh;
-  right: 2rem;
   border-radius: 50%;
   overflow: hidden;
-  z-index: 30;
 }
 
 .dark-mode-btn img {
@@ -25,15 +21,13 @@
 
 @media (max-width: 600px) {
   .dark-mode-btn {
-    height: 4vh;
-    width: 4vh;
-    top: 1.5vh;
-    right: 1.5vh;
+    height: 5vh;
+    width: 5vh;
   }
   .dark-mode-btn img {
     margin: 0.5vh;
-    height: 3vh;
-    width: 3vh;
+    height: 4vh;
+    width: 4vh;
   }
 }
 

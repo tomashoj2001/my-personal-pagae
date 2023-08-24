@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import PageContext from "@/context/PageContext";
 import "./Navbar.css";
+import DarkButton from "../DarkButton";
 
 export default function Navbar() {
   let { setPage } = useContext(PageContext);
@@ -15,6 +16,7 @@ export default function Navbar() {
         <button onClick={() => setPage(1)}>Proyectos</button>
         <button onClick={() => setPage(2)}>Contacto</button>
       </section>
+      <DarkButton />
     </nav>
   );
 }

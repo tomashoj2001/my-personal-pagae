@@ -2,7 +2,7 @@
   "0": {
     "description": [
       "Una Landing Page hecha para el alquiler de un departamento.",
-      "El cliente quería una página donde mostrar su inmueble, adjuntando fotos, precios e información.",
+      "El cliente quería una página donde mostrar su inmueble, adjuntando fotos, precios e información general.",
       "Además, tiene una vista donde se puede ver la disponibilidad y otra para ver los datos de contacto."
     ],
     "site": "https://hostal-del-sol-121.vercel.app/",

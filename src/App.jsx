@@ -19,7 +19,6 @@ function App() {
           <Projects />
           <Contact />
         </main>
-        <DarkButton />
         <NavButtons size={"big"} setMethod={"page"} />
       </ThemeProvider>
     </PageContextProvider>
