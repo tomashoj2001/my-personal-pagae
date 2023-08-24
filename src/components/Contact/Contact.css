@@ -6,7 +6,9 @@
   height: 100%;
 }
 
-.contact__container { margin: auto; }
+.contact__container {
+  margin: auto;
+}
 
 .data {
   display: grid;
@@ -14,14 +16,17 @@
   gap: 1rem;
 }
 
-.data p, .data a {
+.data p,
+.data a {
   color: inherit;
   line-height: 2rem;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.data img {height: 2rem; }
+.data img {
+  height: 2rem;
+}
 
 .profiles {
   display: flex;
@@ -29,17 +34,20 @@
   margin-top: 2rem;
 }
 
-.profiles a { height: 2rem; }
+.profiles a {
+  height: 2rem;
+}
 
-.profiles svg, .profiles img {
+.profiles svg,
+.profiles img {
   stroke: var(--fourth-color);
   height: 2rem;
   width: 2rem;
-  transition: scale .3s;
+  transition: scale 0.3s;
 }
 
 form {
-  margin: .5rem auto 0;
+  margin: 0.5rem auto 0;
   width: 100%;
 }
 
@@ -54,21 +62,27 @@ label {
   margin: auto 0;
 }
 
-input, textarea {
+input,
+textarea {
   font-family: inherit;
   color: var(--fifth-color);
   background-color: var(--first-color);
   outline: none;
   height: 2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border: 2px solid var(--second-color);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   resize: none;
 }
 
-textarea { height: 8rem; }
+textarea {
+  height: 8rem;
+}
 
-input.error, textarea.error { border: 2px solid red; }
+input.error,
+textarea.error {
+  border: 2px solid red;
+}
 
 button[type="submit"] {
   font-size: 1.2rem;
@@ -77,13 +91,13 @@ button[type="submit"] {
   width: 25%;
   margin: 1rem 37% 0;
   padding: 1rem 0;
-  border-radius: .5rem;
-  transition: opacity .3s;
+  border-radius: 0.5rem;
+  transition: opacity 0.3s;
 }
 
 @media (max-width: 600px) {
   .contact {
-    font-size: .8rem;
+    font-size: 0.8rem;
     display: flex;
     flex-direction: column-reverse;
     flex-direction: column;
@@ -93,32 +107,44 @@ button[type="submit"] {
   .data {
     margin-top: 1rem;
     gap: 1rem;
-  }  
+  }
   .profiles {
     justify-content: space-between;
     margin-top: 1rem;
   }
-  form { margin: 1rem auto 0; }  
+  form {
+    margin: 1rem auto 0;
+  }
   .form__container {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-  }  
+  }
   label {
     color: var(--fifth-color);
-    margin: -.5rem 0;
+    margin: -0.5rem 0;
   }
-  textarea { height: 6rem; }
+  textarea {
+    height: 6rem;
+  }
   button[type="submit"] {
     font-size: 1rem;
     width: 40%;
     margin: 1rem 30% 0;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
 }
 
 @media (min-width: 600px) {
-  .data p:hover, .data a:hover {text-decoration: none; }
-  .profiles svg:hover, .profiles img:hover { scale: 1.2; }
-  button[type="submit"]:hover { opacity: .75; }
+  .data p:hover,
+  .data a:hover {
+    text-decoration: none;
+  }
+  .profiles svg:hover,
+  .profiles img:hover {
+    scale: 1.2;
+  }
+  button[type="submit"]:hover {
+    opacity: 0.75;
+  }
 }

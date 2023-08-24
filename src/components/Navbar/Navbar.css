@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap");
 
 .navbar {
   width: 100vw;
@@ -11,25 +11,25 @@
   justify-content: space-between;
   align-items: center;
   background-color: var(--first-color);
-  box-shadow: 0 0 1rem .5rem var(--shadow-color);
+  box-shadow: 0 0 1rem 0.5rem var(--shadow-color);
   z-index: 20;
 }
 
 .navbar__name {
   color: var(--fourth-color);
   font-size: 2rem;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   cursor: pointer;
 }
 
-.navbar__buttons button{
+.navbar__buttons button {
   color: var(--second-color);
   font-weight: 700;
   margin-left: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   text-decoration: none;
   font-size: 1.5rem;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .navbar__buttons button.active {
@@ -49,10 +49,16 @@
     text-align: center;
     font-size: 1.8rem;
   }
-  .navbar__buttons { display: none; }
+  .navbar__buttons {
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
-  .navbar__buttons button:hover { color: var(--fifth-color); }
-  .navbar__buttons button.active { color: var(--fourth-color); }
+  .navbar__buttons button:hover {
+    color: var(--fifth-color);
+  }
+  .navbar__buttons button.active {
+    color: var(--fourth-color);
+  }
 }

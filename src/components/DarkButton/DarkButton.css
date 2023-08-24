@@ -9,7 +9,7 @@
   z-index: 30;
 }
 
-.dark-mode-btn img{
+.dark-mode-btn img {
   margin: 1vh;
   height: 5vh;
   width: 5vh;
@@ -18,7 +18,9 @@
 }
 
 @keyframes rotation {
-  100% { rotate: 360deg; }
+  100% {
+    rotate: 360deg;
+  }
 }
 
 @media (max-width: 600px) {
@@ -29,12 +31,14 @@
     right: 1.5vh;
   }
   .dark-mode-btn img {
-    margin: .5vh;
+    margin: 0.5vh;
     height: 3vh;
     width: 3vh;
   }
 }
 
 @media (min-width: 600px) {
-  .dark-mode-btn img:hover { scale: 1.2; }
+  .dark-mode-btn img:hover {
+    scale: 1.2;
+  }
 }

@@ -1,17 +1,20 @@
-import { useContext } from "react"
-import sun from "@/Assets/sun.svg"
-import moon from "@/Assets/moon.svg"
-import ThemeContext from "@/context/ThemeContext"
-import './DarkButton.css'
+import { useContext } from "react";
+import sun from "@/Assets/sun.svg";
+import moon from "@/Assets/moon.svg";
+import ThemeContext from "@/context/ThemeContext";
+import "./DarkButton.css";
 
-export default function DarkButton() { 
-  let {mode, setMode} = useContext(ThemeContext)
+export default function DarkButton() {
+  let { mode, setMode } = useContext(ThemeContext);
 
-  return(
-    <div className="dark-mode-btn" onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}>
+  return (
+    <div
+      className="dark-mode-btn"
+      onClick={() => setMode(mode === "light" ? "dark" : "light")}
+    >
       <button>
-        <img src={mode === 'light' ? sun : moon} alt="mode" />
+        <img src={mode === "light" ? sun : moon} alt="mode" />
       </button>
     </div>
-  )
+  );
 }

@@ -1,34 +1,36 @@
 {
   "0": {
     "description": [
+      "Una Landing Page hecha para el alquiler de un departamento.",
+      "El cliente quería una página donde mostrar su inmueble, adjuntando fotos, precios e información.",
+      "Además, tiene una vista donde se puede ver la disponibilidad y otra para ver los datos de contacto."
+    ],
+    "site": "https://hostal-del-sol-121.vercel.app/",
+    "code": "https://github.com/tomashoj2001/Hostal-del-Sol-121"
+  },
+  "1": {
+    "description": [
       "Una landing page sobre turismo espacial con un diseño espectacular.",
       "Acá puse en práctica mis conocimientos sobre React Router para hacer redirecciones sin la necesidad de recargar la página."
     ],
     "site": "https://fem-spacetourism-spa.netlify.app/",
     "code": "https://github.com/tomashoj2001/FEM-REACT-space_tourism_SPA"
   },
-  "1": {
-    "description": [
-      "Esta página sirve para hacer el cálculo de las propinas.",
-      "La idea es poner el monto de la cuenta, luego el porcentaje que se desea dejar de propina y, por último, entre cuántas personas se divide la cuenta."
-    ],
-    "site": "https://tomashoj2001.github.io/FEM-Tip-Calculator/",
-    "code": "https://github.com/tomashoj2001/FEM-Tip-Calculator"
-  },
   "2": {
     "description": [
       "Una wikipedia con todos los países del mundo, incluyendo filtros de búsqueda y tema claro/oscuro.",
-      "Cada país tiene su propia página interna, donde se encuentra información de todo tipo, como por ejemplo la capital, población, paises límitrofes, etc."
+      "Cada país tiene su propia página interna, donde se encuentra información de todo tipo, como por ejemplo la capital, población, paises límitrofes, etc.",
+      "Para extraer la información, tuve que hacer llamado a una API."
     ],
     "site": "https://fem-country-app.netlify.app/",
     "code": "https://github.com/tomashoj2001/FEM-REACT-CountryApp"
   },
   "3": {
     "description": [
-      "Una Landing Page con consumo de API.",
-      "En este caso, la API recibe un link web y devuelve una versión recortada del mismo."
+      "Esta página sirve para hacer el cálculo de las propinas.",
+      "La idea es poner el monto de la cuenta, luego el porcentaje que se desea dejar de propina y, por último, entre cuántas personas se divide la cuenta."
     ],
-    "site": "https://tomashoj2001.github.io/FEM-URL-shortening-API-landing-page/",
-    "code": "https://github.com/tomashoj2001/FEM-URL-shortening-API-landing-page"
+    "site": "https://tomashoj2001.github.io/FEM-Tip-Calculator/",
+    "code": "https://github.com/tomashoj2001/FEM-Tip-Calculator"
   }
 }
