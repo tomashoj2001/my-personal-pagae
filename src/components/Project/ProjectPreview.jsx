@@ -1,39 +1,19 @@
-import tourismDesktop from "@/Assets/spacetourism-desktop.jpg";
-import tourismMobile from "@/Assets/spacetourism-mobile.jpg";
-import calculatorDesktop from "@/Assets/tipcalculator-desktop.jpg";
-import calculatorMobile from "@/Assets/tipcalculator-mobile.jpg";
-import landingDesktopLight from "@/Assets/landing-desktop-light.jpg";
-import landingMobileLight from "@/Assets/landing-mobile-light.jpg";
-import landingDesktopDark from "@/Assets/landing-desktop-dark.jpg";
-import landingMobileDark from "@/Assets/landing-mobile-dark.jpg";
-import countriesDesktopLight from "@/Assets/country-desktop-light.jpg";
-import countriesDesktopDark from "@/Assets/country-desktop-dark.jpg";
-import countriesMobileLight from "@/Assets/country-mobile-light.jpg";
-import countriesMobileDark from "@/Assets/country-mobile-dark.jpg";
+import useImages from "@/hooks/useImages";
 
 export default function ProjectPreview({ site, setDesktop, project, mode }) {
-  const images = [];
-  if (mode === "light") images.push([landingDesktopLight, landingMobileLight]);
-  else images.push([landingDesktopDark, landingMobileDark]);
-  images.push([tourismDesktop, tourismMobile]);
-  if (mode === "light")
-    images.push([countriesDesktopLight, countriesMobileLight]);
-  else images.push([countriesDesktopDark, countriesMobileDark]);
-  images.push([calculatorDesktop, calculatorMobile]);
-
-  const img = images[project];
+  const images = useImages(mode, project);
 
   return (
     <section className="project__preview">
       <a className="project__slider" href={site} target="_blank">
         <img
           className="project__img project__img--desktop"
-          src={img[0]}
+          src={images[0]}
           alt="Proyecto escritorio"
         />
         <img
           className="project__img project__img--mobile"
-          src={img[1]}
+          src={images[1]}
           alt="Proyecto teléfono"
         />
       </a>

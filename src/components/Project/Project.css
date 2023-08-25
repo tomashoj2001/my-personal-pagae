@@ -22,6 +22,7 @@
 .project-navbar button:first-child {
   transform-origin: 0;
 }
+
 .project-navbar button:last-child {
   transform-origin: 100%;
 }
@@ -119,7 +120,7 @@
 
 .project__img--mobile {
   width: auto;
-  margin-left: 39%;
+  margin-left: 10%;
 }
 
 @media (max-width: 600px) {
