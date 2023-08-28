@@ -14,7 +14,7 @@
 
 .project-navbar button {
   color: var(--second-color);
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 600;
   transition: 0.3s;
 }
@@ -44,7 +44,7 @@
 }
 
 .project__text p {
-  margin-bottom: 1rem;
+  margin-bottom: .85rem;
   text-align: center;
 }
 

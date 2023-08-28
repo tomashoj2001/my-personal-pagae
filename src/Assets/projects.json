@@ -10,11 +10,13 @@
   },
   "1": {
     "description": [
-      "Una landing page sobre turismo espacial con un diseño espectacular.",
-      "Acá puse en práctica mis conocimientos sobre React Router para hacer redirecciones sin la necesidad de recargar la página."
+      "Este es un proyecto realizado en colaboración. Yo me encargué de gran parte del frontend.",
+      "La idea de Coffy es tener una plataforma donde buscar cafeterías que se ajusten a tus necesidades, ya sea para trabajar/estudiar o para disfrutar de un buen café de especialidad.",
+      "Los usuarios pueden agregar cafeterías y hacer reseñas.",
+      "Aún se encuentra en desarrollo."
     ],
-    "site": "https://fem-spacetourism-spa.netlify.app/",
-    "code": "https://github.com/tomashoj2001/FEM-REACT-space_tourism_SPA"
+    "site": "https://coffy-khaki.vercel.app",
+    "code": "https://github.com/JuaniSilva/Coffy"
   },
   "2": {
     "description": [
@@ -27,10 +29,10 @@
   },
   "3": {
     "description": [
-      "Esta página sirve para hacer el cálculo de las propinas.",
-      "La idea es poner el monto de la cuenta, luego el porcentaje que se desea dejar de propina y, por último, entre cuántas personas se divide la cuenta."
+      "Una landing page sobre turismo espacial con un diseño espectacular.",
+      "Acá puse en práctica mis conocimientos sobre React Router para hacer redirecciones sin la necesidad de recargar la página."
     ],
-    "site": "https://tomashoj2001.github.io/FEM-Tip-Calculator/",
-    "code": "https://github.com/tomashoj2001/FEM-Tip-Calculator"
+    "site": "https://fem-spacetourism-spa.netlify.app/",
+    "code": "https://github.com/tomashoj2001/FEM-REACT-space_tourism_SPA"
   }
 }
