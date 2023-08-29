@@ -13,7 +13,7 @@ export function ThemeProvider({ children }) {
   let html = document.querySelector("html");
   if (mode === "light") {
     root.style.setProperty("--first-color", "rgb(168, 218, 220)");
-    root.style.setProperty("--second-color", "rgb(29, 93, 133)");
+    root.style.setProperty("--second-color", "rgb(44, 129, 168)");
     root.style.setProperty("--third-color", "rgb(235, 250, 250)");
     root.style.setProperty("--fourth-color", "rgb(194, 3, 3)");
     root.style.setProperty("--fifth-color", "rgb(29, 53, 87)");

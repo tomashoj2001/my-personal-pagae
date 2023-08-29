@@ -99,6 +99,7 @@
   font-weight: 600;
   font-size: 1.15rem;
   transition: 0.3s;
+  width: 85px;
 }
 
 .preview__buttons button.active {
@@ -133,7 +134,7 @@
     padding: 0.5rem 0;
   }
   .project-navbar button {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     display: none;
   }
   .project-navbar button.active {
@@ -163,14 +164,11 @@
     width: 100%;
   }
   .project__navButtons img {
-    scale: 1;
+    scale: 1.5;
   }
   .project__preview {
     width: 100%;
     overflow: hidden;
-  }
-  .preview__buttons {
-    display: none;
   }
   .project__slider {
     transition: 0.3s;
@@ -181,7 +179,7 @@
     transition: 0.3s;
   }
   .project__img--mobile {
-    display: none;
+    margin-left: 7%;
   }
 }
 

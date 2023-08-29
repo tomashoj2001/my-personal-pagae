@@ -6,7 +6,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color 0.5s;
+  transition: background-color 0.4s;
+  /* outline: 1px solid red; */
 }
 
 :root {
@@ -21,6 +22,7 @@ html {
   color: var(--fifth-color);
   width: 100vw;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 main {
@@ -68,7 +70,9 @@ img {
     overflow-y: auto;
   }
   main {
-    margin-top: 8vh;
+    position: absolute;
+    top: 0vh;
+    /* margin-top: 8vh; */
     width: 100vw;
     height: auto;
     padding-bottom: 20vh;

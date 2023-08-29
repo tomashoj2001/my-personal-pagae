@@ -7,11 +7,13 @@ export function PageContextProvider({ children }) {
 
   useEffect(() => {
     let buttons = [...document.querySelectorAll(".navbar__buttons button")];
+    let isMobile = innerWidth < 600
+
     buttons.forEach((el) => el.classList.remove("active"));
     buttons[page].classList.add("active");
 
     let main = document.querySelector("main");
-    main.style.transform = `translateX(${-100 * page}vw)`;
+    if (!isMobile) main.style.transform = `translateX(${-100 * page}vw)`;
   }, [page]);
 
   return (

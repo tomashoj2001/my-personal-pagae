@@ -15,6 +15,10 @@
   z-index: 20;
 }
 
+.navbar a {
+  text-decoration: none;
+}
+
 .navbar__name {
   color: var(--fourth-color);
   font-size: 2rem;

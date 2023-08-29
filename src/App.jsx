@@ -1,12 +1,11 @@
 import About from "./components/About/";
 import Contact from "./components/Contact";
-import DarkButton from "./components/DarkButton";
 import Navbar from "./components/Navbar";
 import NavButtons from "./components/NavButtons";
 import Projects from "./components/Project";
 import { PageContextProvider } from "./context/PageContext";
 import { ThemeProvider } from "./context/ThemeContext";
-
+import { ProjectContextProvider } from "./context/ProjectContext";
 import "./App.css";
 
 function App() {
@@ -14,11 +13,15 @@ function App() {
     <PageContextProvider>
       <ThemeProvider>
         <Navbar />
-        <main>
-          <About />
-          <Projects />
-          <Contact />
-        </main>
+
+        <ProjectContextProvider>
+          <main>
+            <About />
+            <Projects />
+            <Contact />
+          </main>
+        </ProjectContextProvider>
+
         <NavButtons size={"big"} setMethod={"page"} />
       </ThemeProvider>
     </PageContextProvider>
