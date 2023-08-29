@@ -134,7 +134,7 @@
     padding: 0.5rem 0;
   }
   .project-navbar button {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     display: none;
   }
   .project-navbar button.active {
@@ -167,7 +167,6 @@
     top: 0.5rem;
     position: absolute;
     justify-content: space-between;
-    padding: 0 .5rem;
   }
   .project__navButtons img {
     scale: 1.5;
