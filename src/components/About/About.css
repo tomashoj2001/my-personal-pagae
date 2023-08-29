@@ -78,6 +78,6 @@
 
 @media (min-width: 600px) {
   .about__text a:hover {
-    color: var(--third-color);
+    opacity: .75;
   }
 }
