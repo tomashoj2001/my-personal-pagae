@@ -43,7 +43,7 @@
   stroke: var(--fourth-color);
   height: 2rem;
   width: 2rem;
-  transition: scale 0.3s;
+  transition: scale 0.2s;
 }
 
 form {
@@ -92,7 +92,7 @@ button[type="submit"] {
   margin: 1rem 37% 0;
   padding: 1rem 0;
   border-radius: 0.5rem;
-  transition: opacity 0.3s;
+  transition: opacity 0.2s;
 }
 
 @media (max-width: 600px) {
