@@ -12,7 +12,7 @@ export default function Projects() {
   return (
     <div id="projects" className="project container">
       <h1>Te muestro mis proyectos favoritos :)</h1>
-      <ProjectNavbar setProject={setProject} />
+      <ProjectNavbar project={project} setProject={setProject} />
       <ProjectInfo project={project} setProject={setProject} />
     </div>
   );

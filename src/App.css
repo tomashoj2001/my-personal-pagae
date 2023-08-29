@@ -75,7 +75,7 @@ img {
     /* margin-top: 8vh; */
     width: 100vw;
     height: auto;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
     flex-direction: column;
     gap: 10vh;
   }

@@ -32,7 +32,9 @@ export default function ProjectInfo({ project, setProject }) {
           </a>
         </section>
 
-        <NavButtons size={"small"} setMethod={setProject} method={project} />
+        {innerWidth > 600 && (
+          <NavButtons size={"small"} setMethod={setProject} method={project} />
+        )}
       </section>
 
       <ProjectPreview

@@ -44,6 +44,7 @@
 @media (max-width: 600px) {
   .navbar {
     height: 8vh;
+    padding: 0 7.5vw;
   }
   .navbar__name {
     width: 100%;

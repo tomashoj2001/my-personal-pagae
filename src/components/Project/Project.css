@@ -44,7 +44,7 @@
 }
 
 .project__text p {
-  margin-bottom: .85rem;
+  margin-bottom: 0.85rem;
   text-align: center;
 }
 
@@ -158,10 +158,16 @@
     padding: 0.25rem 0.5rem;
     transition: 0.3s;
   }
-  .project__navButtons {
-    margin-top: 1rem;
-    gap: 1rem;
+  .mobileContainer {
     width: 100%;
+    position: relative;
+  }
+  .project__navButtons {
+    margin-top: 0;
+    top: 0.5rem;
+    position: absolute;
+    justify-content: space-between;
+    padding: 0 .5rem;
   }
   .project__navButtons img {
     scale: 1.5;
