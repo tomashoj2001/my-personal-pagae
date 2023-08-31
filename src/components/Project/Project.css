@@ -197,10 +197,13 @@
   .project__navButtons img:hover {
     scale: 1.5;
   }
+  .project__text {
+    padding-top: 1rem;
+  }
   .project__slider {
-    height: 340px;
+    height: 360px;
   }
   .project__img {
-    max-height: 325px;
+    max-height: 330px;
   }
 }
