@@ -3,6 +3,7 @@ import PageContext from "@/context/PageContext";
 import ProjectContext from "@/context/ProjectContext";
 import {
   CSS,
+  Git,
   HTML,
   JavaScript,
   NextJS,
@@ -72,6 +73,7 @@ export default function About() {
               <TypeScript />
               <Tailwind />
               <NextJS />
+              <Git />
             </div>
           </div>
         </section>
