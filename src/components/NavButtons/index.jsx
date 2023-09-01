@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 
 import bigArrowLight from "@/Assets/bigArrow-light.png";
 import bigArrowDark from "@/Assets/bigArrow-dark.png";
@@ -43,6 +43,28 @@ export default function NavButtons({ size, setMethod, method }) {
   }
 
   let { page, setPage } = useContext(PageContext);
+
+  const handleArrowKey = (evt) => {
+    if (evt.key === "ArrowLeft") {
+      setPage((currPage) => {
+        if (currPage === 0) return currPage;
+        return currPage - 1;
+      });
+    } else if (evt.key === "ArrowRight") {
+      setPage((currPage) => {
+        if (currPage === 2) return currPage;
+        return currPage + 1;
+      });
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("keydown", handleArrowKey);
+    return () => {
+      window.removeEventListener("keydown", handleArrowKey);
+    };
+  }, []);
+
   return (
     <section className="nav-buttons">
       {page > 0 && (
