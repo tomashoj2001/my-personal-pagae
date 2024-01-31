@@ -1,9 +1,7 @@
 import { useContext } from "react";
-
 import ProjectInfo from "./ProjectInfo";
 import ProjectNavbar from "./ProjectNavbar";
 import ProjectContext from "@/context/ProjectContext";
-
 import "./Project.css";
 
 export default function Projects() {

@@ -14,7 +14,7 @@
 }
 
 .about h2 {
-  margin: 1rem 0 0;
+  margin: 2rem 0 0;
 }
 
 .about p {
@@ -38,6 +38,7 @@
 }
 
 .technologies {
+  margin-top: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -78,6 +79,6 @@
 
 @media (min-width: 600px) {
   .about__text a:hover {
-    opacity: .75;
+    opacity: 0.75;
   }
 }

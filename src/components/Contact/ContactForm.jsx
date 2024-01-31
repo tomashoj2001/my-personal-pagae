@@ -1,7 +1,7 @@
 import useMail from "@/hooks/useMail";
 
 export default function ContactForm() {
-  let { handleMail, handleBlur, handleSubmit, handleChange } = useMail();
+  const { handleMail, handleBlur, handleSubmit, handleChange } = useMail();
 
   return (
     <form className="form" onSubmit={handleSubmit}>

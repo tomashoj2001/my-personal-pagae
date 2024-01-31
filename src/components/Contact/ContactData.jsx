@@ -1,19 +1,16 @@
 import { useContext } from "react";
-
 import emailLight from "@/Assets/email-light.png";
 import emailDark from "@/Assets/email-dark.png";
 import locationLight from "@/Assets/location-light.png";
 import locationDark from "@/Assets/location-dark.png";
 import phoneLight from "@/Assets/phone-light.png";
 import phoneDark from "@/Assets/phone-dark.png";
-
 import useMail from "@/hooks/useMail";
-
 import ThemeContext from "@/context/ThemeContext";
 
 export default function ContactData() {
-  let { handleMail } = useMail();
-  let { mode } = useContext(ThemeContext);
+  const { handleMail } = useMail();
+  const { mode } = useContext(ThemeContext);
 
   return (
     <section className="data">

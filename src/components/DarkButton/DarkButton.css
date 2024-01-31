@@ -9,7 +9,7 @@
   margin: 1vh;
   height: 5vh;
   width: 5vh;
-  transition: all .2s;
+  transition: all 0.2s;
   animation: rotation infinite 6s linear;
 }
 

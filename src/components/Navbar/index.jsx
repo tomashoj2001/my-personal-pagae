@@ -4,10 +4,11 @@ import DarkButton from "../DarkButton";
 import "./Navbar.css";
 
 export default function Navbar() {
-  let { setPage } = useContext(PageContext);
+  const { setPage } = useContext(PageContext);
 
   const goToHome = (evt) => {
     const isMobile = innerWidth < 600;
+
     if (!isMobile) {
       evt.preventDefault();
     }

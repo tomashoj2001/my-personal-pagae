@@ -5,7 +5,7 @@ import ThemeContext from "@/context/ThemeContext";
 import "./DarkButton.css";
 
 export default function DarkButton() {
-  let { mode, setMode } = useContext(ThemeContext);
+  const { mode, setMode } = useContext(ThemeContext);
 
   return (
     <div

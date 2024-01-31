@@ -1,7 +1,6 @@
 import ContactData from "./ContactData";
 import ContactForm from "./ContactForm";
 import ContactProfile from "./ContactProfile";
-
 import "./Contact.css";
 
 export default function Contact() {

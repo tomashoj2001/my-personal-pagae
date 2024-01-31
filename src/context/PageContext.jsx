@@ -7,7 +7,7 @@ export function PageContextProvider({ children }) {
 
   useEffect(() => {
     let buttons = [...document.querySelectorAll(".navbar__buttons button")];
-    let isMobile = innerWidth < 600
+    let isMobile = innerWidth < 600;
 
     buttons.forEach((el) => el.classList.remove("active"));
     buttons[page].classList.add("active");

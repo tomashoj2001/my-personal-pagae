@@ -7,7 +7,7 @@ export default function useDesktop(desktop) {
     buttons[desktop].classList.add("active");
 
     let slider = document.querySelector(".project__slider");
-    slider.style.transform = `translateX(${-desktop * 100}%)`;
+    slider.style.transform = `translateX(${-desktop * 50}%)`;
   }, [desktop]);
 
   setTimeout(() => {

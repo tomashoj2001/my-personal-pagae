@@ -1,13 +1,10 @@
 import { useContext, useEffect } from "react";
-
 import bigArrowLight from "@/Assets/bigArrow-light.png";
 import bigArrowDark from "@/Assets/bigArrow-dark.png";
 import arrowLight from "@/Assets/arrow-light.png";
 import arrowDark from "@/Assets/arrow-dark.png";
-
 import PageContext from "@/context/PageContext";
 import ThemeContext from "@/context/ThemeContext";
-
 import "./NavButtons.css";
 
 const imgs = {
@@ -22,7 +19,7 @@ const imgs = {
 };
 
 export default function NavButtons({ size, setMethod, method }) {
-  let { mode } = useContext(ThemeContext);
+  const { mode } = useContext(ThemeContext);
 
   if (size === "small") {
     const isDesktop = window.innerWidth > 700 ? "small" : "big";
@@ -42,7 +39,7 @@ export default function NavButtons({ size, setMethod, method }) {
     );
   }
 
-  let { page, setPage } = useContext(PageContext);
+  const { page, setPage } = useContext(PageContext);
 
   const handleArrowKey = (evt) => {
     if (evt.key === "ArrowLeft") {

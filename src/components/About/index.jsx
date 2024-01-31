@@ -18,9 +18,9 @@ export default function About() {
   const { project, setProject } = useContext(ProjectContext);
 
   const goToPortofolio = (evt, project) => {
-    const isMobile = innerWidth < 600
-    if (!isMobile) { 
-      evt.preventDefault()
+    const isMobile = innerWidth < 600;
+    if (!isMobile) {
+      evt.preventDefault();
     }
 
     setPage(1);
@@ -33,10 +33,17 @@ export default function About() {
       <div className="about">
         <section className="about__text">
           <div>
-            <p>Tengo 22 años y estudio Desarrollo Web Front-End hace 2 años.</p>
+            <p>Tengo 22 años y estudio Programación Front-End hace 2 años.</p>
             <p>
-              Logré 6 meses de experiencia a través de trabajos freelance,
-              incluyendo una{" "}
+              Desarrollé 1 año de experienca, formado por trabajo en relación de
+              dependencia (
+              <a
+                href="https://www.linkedin.com/company/thewalltrip/"
+                target="_blank"
+              >
+                Walltrip
+              </a>
+              ) y por trabajos freelance, incluyendo una{" "}
               <a href="#projects" onClick={(evt) => goToPortofolio(evt, 0)}>
                 Landing Page de un inmueble
               </a>{" "}
@@ -46,7 +53,10 @@ export default function About() {
               </a>
               . Además, tengo otros proyectos de los que estoy orgulloso y los
               podés ver en{" "}
-              <a href="#projects" onClick={(evt) => goToPortofolio(evt, project)}>
+              <a
+                href="#projects"
+                onClick={(evt) => goToPortofolio(evt, project)}
+              >
                 mi portfolio
               </a>
               .
